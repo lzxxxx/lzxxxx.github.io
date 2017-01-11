@@ -93,7 +93,7 @@ gulp/
 │    ├- css/
 │     │      └─ style.l">
 <meta property="og:type" content="article">
-<meta property="og:title" content="gulp">
+<meta property="og:title" content="gulp学习笔记">
 <meta property="og:url" content="http://yoursite.com/2017/01/10/gulp笔记/index.html">
 <meta property="og:site_name" content="lzxxxx">
 <meta property="og:description" content="#gulp
@@ -104,9 +104,9 @@ gulp/
 ├- app/
 │    ├- css/
 │     │      └─ style.l">
-<meta property="og:updated_time" content="2017-01-11T11:05:31.000Z">
+<meta property="og:updated_time" content="2017-01-11T11:12:07.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="gulp">
+<meta name="twitter:title" content="gulp学习笔记">
 <meta name="twitter:description" content="#gulp
 ##什么Gulpgulp 是基于 Nodejs 的自动任务运行器，能自动化地完成文件的的测试、检查、合并、压缩、格式化、浏览器自动刷新、部署文件生成，并监听文件在改动后重复指定的这些步骤。
 ##Gulp使用
@@ -148,7 +148,7 @@ gulp/
 
 
 
-  <title> gulp | lzxxxx </title>
+  <title> gulp学习笔记 | lzxxxx </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -295,7 +295,7 @@ gulp/
             
             
               
-                gulp
+                gulp学习笔记
               
             
           </h1>
@@ -359,10 +359,10 @@ gulp/
 <p>│     └── index.html</p>
 <p>└── www/</p>
 <p>首先我们要全局安装一遍：</p>
-<pre><code>$ sudo npm install -g gulp
-</code></pre><p>运行时注意查看命令行有没有错误信息，安装完成后，你可以使用下面的命令查看gulp的版本号以确保gulp已经被正确安装。</p>
-<pre><code>$ gulp -v
-</code></pre><p> 接着我们要进去到项目的根目录再安装一遍</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo npm install -g gulp</div></pre></td></tr></table></figure>
+<p>运行时注意查看命令行有没有错误信息，安装完成后，你可以使用下面的命令查看gulp的版本号以确保gulp已经被正确安装。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ gulp -v</div></pre></td></tr></table></figure>
+<p> 接着我们要进去到项目的根目录再安装一遍</p>
 <pre><code>$ sudo npm install gulp
 </code></pre><p>然后我们需要初始化gulp，生成package.json文件，该文件内纪录我们创建的项目的所有信息（一直回车就行）</p>
 <pre><code>$ npm init
@@ -436,7 +436,7 @@ var uglify = require(&quot;gulp-uglify&quot;);  //压缩js
         .pipe(gulp.dest(&quot;www/css&quot;))
         .pipe(connect.reload())
 })
-</code></pre><p>connect开启服务器,root设置默认根目录,选择根目录下<br>index.html文件</p>
+</code></pre><p>connect开启服务器,root设置默认根目录,选择根目录下index.html文件</p>
 <pre><code>gulp.task(&quot;connect&quot;,function(){
     connect.server({
         root:&quot;www&quot;,
