@@ -84,37 +84,31 @@
 
 
 
-<meta name="description" content="#gulp
-##什么Gulpgulp 是基于 Nodejs 的自动任务运行器，能自动化地完成文件的的测试、检查、合并、压缩、格式化、浏览器自动刷新、部署文件生成，并监听文件在改动后重复指定的这些步骤。
-##Gulp使用
-###创建目录结构建立如下目录结构(供参考)，gulp 作为我们的项目根目录。
+<meta name="description" content="gulp什么Gulpgulp 是基于 Nodejs 的自动任务运行器，能自动化地完成文件的的测试、检查、合并、压缩、格式化、浏览器自动刷新、部署文件生成，并监听文件在改动后重复指定的这些步骤。
+Gulp使用创建目录结构建立如下目录结构(供参考)，gulp 作为我们的项目根目录。
 gulp/
 ├- app/
 │    ├- css/
-│     │      └─ style.l">
+│     │      └─ style.less/*.css">
 <meta property="og:type" content="article">
 <meta property="og:title" content="gulp学习笔记">
 <meta property="og:url" content="http://yoursite.com/2017/01/10/gulp笔记/index.html">
 <meta property="og:site_name" content="lzxxxx">
-<meta property="og:description" content="#gulp
-##什么Gulpgulp 是基于 Nodejs 的自动任务运行器，能自动化地完成文件的的测试、检查、合并、压缩、格式化、浏览器自动刷新、部署文件生成，并监听文件在改动后重复指定的这些步骤。
-##Gulp使用
-###创建目录结构建立如下目录结构(供参考)，gulp 作为我们的项目根目录。
+<meta property="og:description" content="gulp什么Gulpgulp 是基于 Nodejs 的自动任务运行器，能自动化地完成文件的的测试、检查、合并、压缩、格式化、浏览器自动刷新、部署文件生成，并监听文件在改动后重复指定的这些步骤。
+Gulp使用创建目录结构建立如下目录结构(供参考)，gulp 作为我们的项目根目录。
 gulp/
 ├- app/
 │    ├- css/
-│     │      └─ style.l">
-<meta property="og:updated_time" content="2017-01-11T11:12:52.000Z">
+│     │      └─ style.less/*.css">
+<meta property="og:updated_time" content="2017-01-11T11:13:36.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="gulp学习笔记">
-<meta name="twitter:description" content="#gulp
-##什么Gulpgulp 是基于 Nodejs 的自动任务运行器，能自动化地完成文件的的测试、检查、合并、压缩、格式化、浏览器自动刷新、部署文件生成，并监听文件在改动后重复指定的这些步骤。
-##Gulp使用
-###创建目录结构建立如下目录结构(供参考)，gulp 作为我们的项目根目录。
+<meta name="twitter:description" content="gulp什么Gulpgulp 是基于 Nodejs 的自动任务运行器，能自动化地完成文件的的测试、检查、合并、压缩、格式化、浏览器自动刷新、部署文件生成，并监听文件在改动后重复指定的这些步骤。
+Gulp使用创建目录结构建立如下目录结构(供参考)，gulp 作为我们的项目根目录。
 gulp/
 ├- app/
 │    ├- css/
-│     │      └─ style.l">
+│     │      └─ style.less/*.css">
 
 
 
@@ -346,10 +340,8 @@ gulp/
       
 
       
-        <p>#gulp</p>
-<p>##什么Gulp<br>gulp 是基于 Nodejs 的自动任务运行器，能自动化地完成文件的的测试、检查、合并、压缩、格式化、浏览器自动刷新、部署文件生成，并监听文件在改动后重复指定的这些步骤。</p>
-<p>##Gulp使用</p>
-<p>###创建目录结构<br>建立如下目录结构(供参考)，gulp 作为我们的项目根目录。</p>
+        <h1 id="gulp"><a href="#gulp" class="headerlink" title="gulp"></a>gulp</h1><h2 id="什么Gulp"><a href="#什么Gulp" class="headerlink" title="什么Gulp"></a>什么Gulp</h2><p>gulp 是基于 Nodejs 的自动任务运行器，能自动化地完成文件的的测试、检查、合并、压缩、格式化、浏览器自动刷新、部署文件生成，并监听文件在改动后重复指定的这些步骤。</p>
+<h2 id="Gulp使用"><a href="#Gulp使用" class="headerlink" title="Gulp使用"></a>Gulp使用</h2><h3 id="创建目录结构"><a href="#创建目录结构" class="headerlink" title="创建目录结构"></a>创建目录结构</h3><p>建立如下目录结构(供参考)，gulp 作为我们的项目根目录。</p>
 <p>gulp/</p>
 <p>├- app/</p>
 <p>│    ├- css/</p>
@@ -411,7 +403,7 @@ gulp/
 <li><p>dest：这个API设置生成文件的路径，一个任务可以有多个生成路径，一个可以输出未压缩的版本，另一个可以输出压缩后的版本。</p>
 </li>
 </ul>
-<p>###插件使用<br>每个模块都可以单独使用,执行创建的任务用<code>$ gulp 任务的名字</code></p>
+<h3 id="插件使用"><a href="#插件使用" class="headerlink" title="插件使用"></a>插件使用</h3><p>每个模块都可以单独使用,执行创建的任务用<code>$ gulp 任务的名字</code></p>
 <p>引入模块</p>
 <pre><code>var gulp = require(&quot;gulp&quot;); //gulp模块
 var less = require(&quot;gulp-less&quot;);   //less的编译
@@ -546,8 +538,17 @@ var uglify = require(&quot;gulp-uglify&quot;);  //压缩js
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -560,7 +561,7 @@ var uglify = require(&quot;gulp-uglify&quot;);  //压缩js
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -609,6 +610,22 @@ var uglify = require(&quot;gulp-uglify&quot;);  //压缩js
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#gulp"><span class="nav-number">1.</span> <span class="nav-text">gulp</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么Gulp"><span class="nav-number">1.1.</span> <span class="nav-text">什么Gulp</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gulp使用"><span class="nav-number">1.2.</span> <span class="nav-text">Gulp使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建目录结构"><span class="nav-number">1.2.1.</span> <span class="nav-text">创建目录结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插件使用"><span class="nav-number">1.2.2.</span> <span class="nav-text">插件使用</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
