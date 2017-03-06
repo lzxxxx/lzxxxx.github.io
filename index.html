@@ -929,10 +929,10 @@ var uglify = require(&quot;gulp-uglify&quot;);  //压缩js
 <p>MongoDB最新版本下载在官网的DownLoad菜单下：<a href="http://www.mongodb.org/downloads" target="_blank" rel="external">http://www.mongodb.org/downloads</a></p>
 <p>#二、安装</p>
 <p>将下载好的安装包文件解压放到盘符的根目录（如C：或D：），为了方便建议文件夹命名尽量简短如（d:\mongodb）</p>
-<p>解压后的文件<br><img src="az.png" alt="Alt 安装后的文件"></p>
+<p>解压后的文件<br><img src="img/az.png" alt="Alt 安装后的文件"></p>
 <p>#三、启动数据库</p>
-<p>1.创建数据库目录（用来存放数据的目录）<br><img src="cj.png" alt="Alt "></p>
-<p>2.打开终端<br><img src="zd.png" alt="Alt "></p>
+<p>1.创建数据库目录（用来存放数据的目录）<br><img src="img/cj.png" alt="Alt "></p>
+<p>2.打开终端<br><img src="img/zd.png" alt="Alt "></p>
 <p>3.进入mongodb/bin目录</p>
 <p>我的mongdb文件是放到桌面的</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cd desktop/mongdb/bin</div></pre></td></tr></table></figure>
@@ -940,7 +940,7 @@ var uglify = require(&quot;gulp-uglify&quot;);  //压缩js
 <p>执行bin目录里面的<code>mongod</code>命令创建数据库</p>
 <p><code>--dbpath</code>：指定创建数据库的目录</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo ./mongod --dbpath ../data</div></pre></td></tr></table></figure>
-<p>启动成功<br><img src="qd.png" alt="Alt "></p>
+<p>启动成功<br><img src="img/qd.png" alt="Alt "></p>
 <p>mongodb默认连接端口27017，如果出现如图的情况，可以打开<a href="http://localhost:27017查看，发现以下文字连接成功，如果不成功，可以查看端口是否被占用。" target="_blank" rel="external">http://localhost:27017查看，发现以下文字连接成功，如果不成功，可以查看端口是否被占用。</a></p>
 <p>It looks like you are trying to access MongoDB over HTTP on the native driver port.</p>
 <p>启动成功后窗口不能关闭(<strong>关闭就不能连接数据库了</strong>)</p>
